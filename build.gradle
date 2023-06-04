@@ -1,0 +1,24 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+version = '0.0.1'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+}
+
+apply plugin : "java"
+
+ext{
+	javaMainClass = "transmission.TransApi"
+}
+
+application {
+	mainClassName = javaMainClass
+}
